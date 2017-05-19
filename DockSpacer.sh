@@ -35,7 +35,6 @@ while [ $i -lt $count ];
 do
 	defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 	let i=i+1
-	sleep 0.3
 done
 killall Dock
 echo "$count spacers added, enjoy! Just drag out to remove."
